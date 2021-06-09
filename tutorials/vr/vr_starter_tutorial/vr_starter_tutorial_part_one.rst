@@ -869,7 +869,7 @@ being picked up.
 Then we call ``apply_impulse`` on the ``held_object`` so that the :ref:`RigidBody <class_RigidBody>` is thrown in the direction of the VR controller's velocity, ``controller_velocity``.
 
 We then check to see if the object held extends a class called ``VR_Interactable_Rigidbody``. If it does, then we call a function called ``dropped`` in ``held_object`` and set
-``held_object.controller`` to ``null``. While we have not made ``VR_Interactable_Rigidbody`` yet, but what this will do is call the ``droppped`` function so the :ref:`RigidBody <class_RigidBody>`
+``held_object.controller`` to ``null``. While we have not made ``VR_Interactable_Rigidbody`` yet, but what this will do is call the ``dropped`` function so the :ref:`RigidBody <class_RigidBody>`
 can do whatever it needs to do when dropped, and we set the ``controller`` variable to ``null`` so that the :ref:`RigidBody <class_RigidBody>` knows that it is not being held.
 
 .. tip:: Don't worry, we will cover ``VR_Interactable_Rigidbody`` after this section!
@@ -996,7 +996,7 @@ Once you have ``VR_Interactable_Rigidbody.gd`` open, add the following code:
         pass
 
 
-Let's quickly go through what this script.
+Let's quickly go through what this script does.
 
 _________________
 
